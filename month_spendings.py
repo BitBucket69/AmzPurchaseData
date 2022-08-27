@@ -4,7 +4,7 @@ df.shape
 df.fillna(0)
 df.head()
 
-date_val = pd.DatetimeIndex(df['Order Date'])
+date_val = pd.DatetimeIndex(df['Order Date']) #used to extract month from 'Order Date'
 
 df['Month'] = date_val.month 
 df['Year'] = date_val.year 
